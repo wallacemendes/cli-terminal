@@ -9,7 +9,7 @@ char *strerror(int errnum); //referenciando
 int main (int * argc, char * argv[]){ //qtde de argumentos e valores dos argumentos
 
     if( argc != 3 ){
-      printf("Quantidade de argumentos inválida.");
+      printf("filecopy: Quantidade de argumentos inválida.\n Use: filecopy <arquivoorigem> <arquivodestino>");
       exit(1);
     }
     
@@ -71,5 +71,5 @@ int main (int * argc, char * argv[]){ //qtde de argumentos e valores dos argumen
 
   printf("filecopy: foram copiados %d bytes do arquivo %s para o arquivo %s \n",totalbytes, argv[1], argv[2]);
 
-  exit(1);
+  exit(0);
 }
